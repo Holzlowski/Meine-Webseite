@@ -1,1 +1,60 @@
-/* Deine eigenen Styles - komplett neu! */
+/* Vollbild-Hintergrundbild für die gesamte Seite */
+.fullscreen-bg {
+    /* Fixiert das Element an einer absoluten Position */
+    position: fixed;
+    
+    /* Positioniert das Element am oberen linken Rand */
+    top: 0;
+    left: 0;
+    
+    /* Nimmt die volle Breite und Höhe des Bildschirms ein */
+    width: 100%;
+    height: 100%;
+    
+    /* Lädt das Hintergrundbild aus dem assets-Ordner */
+    background-image: url('./assets/images/Pattern2.png');
+    
+    /* Skaliert das Bild so, dass es das gesamte div-Element ausfüllt */
+    background-size: 120%;
+    
+    /* Zentriert das Bild horizontal und vertikal */
+    background-position: -75px center;
+    
+    /* Verhindert, dass das Bild wiederholt wird */
+    background-repeat: no-repeat;
+    
+    /* Schickt das Element hinter alle anderen Inhalte */
+    z-index: -1;
+
+    filter: contrast(1.2) brightness(2) saturate(1.2);
+    
+    /* Spiegelt das Hintergrundbild horizontal */
+    transform: scaleX(-1);
+    
+}
+
+.avatar-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 500px; 
+    height: auto;  /* Gleiche Höhe wie Breite = proportional */
+    
+    /* Drop-Shadow folgt der tatsächlichen Form des PNG */
+    filter: drop-shadow(0 8px 32px rgb(0, 0, 0));  /* 16px → 32px */
+    
+    /* Schwebe-Animation */
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Keyframes für die Schwebe-Animation */
+@keyframes floating {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0px);  /* Startposition */
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px); /* 20px nach oben */
+    }
+}
