@@ -1,0 +1,50 @@
+/* ==============================================
+   CONTENT SECTION
+   ============================================== */
+
+.content-section {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 2rem;
+    z-index: 1;
+    
+    /* Zweifarbige Unterteilung - Grün und Rot */
+    background: linear-gradient(
+        to right,
+        rgb(67, 83, 3) 50%,
+        rgb(97, 16, 0) 50%
+    );
+}
+
+.content-wrapper {
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.content-card {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.content-card:first-of-type {
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 0;
+}
+
+.content-card:last-of-type {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.content-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content-card p {
+    color: #666;
+    line-height: 1.6;
+}

@@ -4,7 +4,7 @@ import logoName from '../../assets/images/LogoName.png'; // Optional: Logo-Name 
 
 function NavigationBar() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" fixed='top'>
             <Container>
                 <Navbar.Brand href="#home">
                     <img 
