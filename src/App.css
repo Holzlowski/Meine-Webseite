@@ -12,13 +12,13 @@
     height: 100%;
     
     /* Lädt das Hintergrundbild aus dem assets-Ordner */
-    background-image: url('./assets/images/Pattern2.png');
+    background-image: url('./assets/images/Pattern6.png');
     
     /* Skaliert das Bild so, dass es das gesamte div-Element ausfüllt */
-    background-size: 120%;
+    background-size: 100%;
     
     /* Zentriert das Bild horizontal und vertikal */
-    background-position: -75px center;
+    background-position:  center;
     
     /* Verhindert, dass das Bild wiederholt wird */
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     /* Schickt das Element hinter alle anderen Inhalte */
     z-index: -1;
 
-    filter: contrast(1.2) brightness(2) saturate(1.2);
+    filter: contrast(1) brightness(1.1) saturate(1);
     
     /* Spiegelt das Hintergrundbild horizontal */
     transform: scaleX(-1);
