@@ -5,7 +5,7 @@
 .content-section {
     position: relative;
     min-height: 100vh;
-    padding-top: 2rem;
+    padding-top: 1rem;
     z-index: 1;
 
     /* Zweifarbige Unterteilung - Grün und Rot */
@@ -21,21 +21,26 @@
 }
 
 .content-wrapper {
-    padding: 0;                             /* KEIN Padding! */
+    padding: 0;            
     border-radius: 15px;
-    max-width: 650px;                       /* Maximale Breite */
-    width: 100%;                             /* Responsive Breite */
-
+    max-width: 1800px;                      /* Breiter für Text + Bild */
+    width: 100%;                            /* Responsive Breite */
+    
+    /* FLEXBOX für Text und Bild nebeneinander */
+    display: flex;
+    gap: 2rem;                              /* Abstand zwischen Text und Bild */
+    align-items: flex-start;                /* Oben ausrichten */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* background-color: rgb(246, 240, 219); */
 }
 
 .content-card {
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
-    padding-top: 15px;
+    flex: 1.5;                                /* Text nimmt 3/4 der Breite (75%) */
+    height: auto;                           /* Höhe automatisch anpassen */
+    /* background: rgba(255, 255, 255, 0.9); */
+    padding: 20px;                          /* Mehr Padding für bessere Lesbarkeit */
     border-radius: 10px;
     margin-top: 1rem;
-    width: 100%;                       
-
 }
 
 .content-card p {
@@ -54,4 +59,19 @@
     margin-left: 5px;                       /* Kleiner Abstand zum Text */
     vertical-align: middle;                 /* Vertikal zum Text ausrichten */
     display: inline;                        /* Inline mit dem Text */
+}
+
+.content-image {
+    flex: 1;                                /* Bild nimmt 1/3 der Breite */
+    display: flex;
+    justify-content: center;                /* Bild zentrieren */
+    align-items: flex-start;                /* Oben ausrichten */
+}
+
+.charakter-bild {
+    width: 100%;                             /* Kleineres Bild */
+    max-width: 500px;                       /* Kleinere maximale Bildgröße */
+    height: auto;                           /* Proportionen beibehalten */
+    border-radius: 10px;                    /* Abgerundete Ecken */
+    margin-top: 160px;
 }

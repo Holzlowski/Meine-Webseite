@@ -5,7 +5,7 @@
 /* Avatar Wrapper für Gegen-Rotation */
 .avatar-wrapper {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -14,7 +14,7 @@
 
 .avatar-center {
     position: relative;
-    top: 10px;
+    top: 50px;
     width: 500px;
     height: auto;
     filter: drop-shadow(0 8px 32px rgb(0, 0, 0));

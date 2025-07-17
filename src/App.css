@@ -12,6 +12,28 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+/* ==============================================
+   BACKGROUND & LAYOUT
+   ============================================== */
+
+/* Vollbild-Hintergrundbild für die gesamte Seite */
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url('./assets/images/Wald.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    z-index: -1;
+    filter: contrast(1) brightness(1.1) saturate(1);
+}
+
 /* ==============================================
    NAVIGATION
    ============================================== */
