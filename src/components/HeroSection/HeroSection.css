@@ -1,17 +1,4 @@
 /* ==============================================
-   HERO SECTION
-   ============================================== */
-
-.hero-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ==============================================
    3D AVATAR & ANIMATIONS
    ============================================== */
 
@@ -27,9 +14,9 @@
 
 .avatar-center {
     position: relative;
+    top: 10px;
     width: 500px;
     height: auto;
-    top: 30px;
     filter: drop-shadow(0 8px 32px rgb(0, 0, 0));
     animation: floating 3s ease-in-out infinite;
 }
